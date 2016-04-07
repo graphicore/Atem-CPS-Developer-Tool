@@ -29,7 +29,7 @@ define([
         $scope.$on('drilldown-mom', this._showStyleDictHandler.bind(this));
         this._waiting = null;
     }
-    CpsPanelController.$inject = ['$scope', 'ModelController', 'ruleController'];
+    CpsPanelController.$inject = ['$scope', 'cpsController', 'ruleController'];
     var _p = CpsPanelController.prototype;
 
     // This is handling one PropertyCollection at a time.
