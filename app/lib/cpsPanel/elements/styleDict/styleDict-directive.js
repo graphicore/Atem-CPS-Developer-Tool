@@ -15,14 +15,14 @@ define([
                 for(i=trace.length-1;i>=0;i--) {
                     item = trace[i];
                     switch(item.constructor.name) {
-                        case 'ParameterCollection':
+                        case 'PropertyCollection':
                             // NOTE: the first of these probably did not get @imported
                             // the others most probably got.
                             // We should however rather add the @import items to the trace
                             // as it is easier to extend if other sources for
-                            // ParameterCollections come into being, like @generate
-                            // ParameterCollection could be ignored.
-                            // The first parameter collection, however helps
+                            // PropertyCollections come into being, like @generate
+                            // PropertyCollection could be ignored.
+                            // The first property collection, however helps
                             // to identify the "master cps file" that is useful
                             // information! (and not @imported ...)
                             result.push(depth + '@import "'+item.source.name+'";');

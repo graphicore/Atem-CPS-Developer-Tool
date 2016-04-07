@@ -2,7 +2,7 @@
     <li ng-repeat="item in items track by item[0]"
         ng-switch="item[1].constructor.name">
         <mtk-cps-property
-            ng-switch-when="Parameter"
+            ng-switch-when="Property"
 
             cps-property-dict="controller.cpsPropertyDict"
             property="item[1]"

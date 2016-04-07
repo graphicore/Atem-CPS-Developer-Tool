@@ -38,13 +38,13 @@ define([
 
 
     // everything that displays a "Rule" must also display the invalid
-    // parameters of that rule, hence we can change it, parse it again
-    // then see if it is a valid parameter or still invalid.
+    // properties of that rule, hence we can change it, parse it again
+    // then see if it is a valid property or still invalid.
     // Change it refers to: a new name, a new value, both name and value are new
     // The old rule will be replaced
 
 
-    // if possible invalid and valid parameters equal from their inputs but differ in style
+    // if possible invalid and valid properties equal from their inputs but differ in style
 
     // Properties are in:
     // StyleDict dictionary displays
@@ -72,14 +72,14 @@ define([
 
     // For the styledict view we should be able to display all rules that it is made up from
     // the most specific one at the top (styledict knows the order)
-    // the inactive parameters should be visually very different from the active parameters
+    // the inactive properties should be visually very different from the active properties
     //           although, editing should be possible
-    // parameters can be added to all displayed rules
+    // properties can be added to all displayed rules
     // (OR new rules can be added to the master PropertyCollection of the element
     // but that must be a shortcut to the same functionality as in the Collection View)
 
     // the other styledict view will just display the active key/value pairs
-    // here is no way add a parameter (we wouldn't know where to add it)
+    // here is no way add a property (we wouldn't know where to add it)
 
 
 

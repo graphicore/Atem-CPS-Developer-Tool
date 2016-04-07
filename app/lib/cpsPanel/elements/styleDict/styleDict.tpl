@@ -11,7 +11,7 @@
         ng-switch="traceItem.constructor.name"
         style="padding-left: calc({{$index}} * 1em)"
         ><div
-            ng-switch-when="ParameterCollection"
+            ng-switch-when="PropertyCollection"
             style="font-family: monospace;"
             ><span ng-if="$index != 0">@import</span>
              <span ng-if="$index == 0">root file:</span>

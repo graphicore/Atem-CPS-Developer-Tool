@@ -7,5 +7,5 @@
         mtk-click-handler="controller.toolClickHandler"
         ></mtk-element-toolbar><!--
 --><mtk-cps-property-dict
-        cps-property-dict="controller.cpsRule.parameters"
+        cps-property-dict="controller.cpsRule.properties"
         ></mtk-cps-property-dict>

@@ -1,6 +1,6 @@
 define([
     'Atem-CPS/CPS/elements/Rule'
-  , 'Atem-CPS/CPS/elements/ParameterDict'
+  , 'Atem-CPS/CPS/elements/PropertyDict'
 ], function(
     Rule
   , PropertyDict
