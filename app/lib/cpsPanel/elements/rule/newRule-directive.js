@@ -8,6 +8,7 @@ define([
     "use strict";
 
     function NewRuleDirective($compile) {
+        //jshint unused:vars
         function link(scope, element, attrs) {
             var childElement = element[0].getElementsByTagName('mtk-cps-new-selector-list')[0]
               , childScope = angular.element(childElement).isolateScope()

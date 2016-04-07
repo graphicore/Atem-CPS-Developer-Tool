@@ -5,7 +5,7 @@ define([
   , './newProperty-controller'
   , './newProperty-directive'
   , './editProperty-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/elementToolbar'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/elementToolbar'
 ], function(
     angular
   , Controller

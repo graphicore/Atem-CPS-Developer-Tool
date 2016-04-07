@@ -1,5 +1,5 @@
 define([
-    'metapolator/ui/redPill/cpsPanel/elementToolbar/clickHandler'
+    'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/clickHandler'
 ], function(
     clickHandler
 ) {

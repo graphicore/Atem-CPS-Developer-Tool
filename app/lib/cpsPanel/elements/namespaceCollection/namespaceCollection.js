@@ -2,8 +2,8 @@ define([
     'angular'
   , './namespaceCollection-controller'
   , './namespaceCollection-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/elementToolbar'
-  , 'metapolator/ui/redPill/cpsPanel/elements/selectorList/selectorList'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/elementToolbar'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/selectorList/selectorList'
   , './newNamespaceCollection-controller'
   , './newNamespaceCollection-directive'
 ], function(

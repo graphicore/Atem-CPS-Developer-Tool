@@ -1,6 +1,6 @@
 define([
-    'metapolator/errors'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/clickHandler'
+    'Atem-CPS/errors'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/clickHandler'
 ], function(
     errors
   , clickHandler
@@ -38,7 +38,7 @@ define([
 
     _p._getResouceName = function() {
         return this.item.resourceName || '(no resource name yet)';
-    }
+    };
 
     _p._resetItemScope = function(errorMessage) {
         var $scope = this.$scope;

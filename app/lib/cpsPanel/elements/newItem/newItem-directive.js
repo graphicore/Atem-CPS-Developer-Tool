@@ -1,12 +1,12 @@
 define([
     'angular'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
-  , 'metapolator/ui/domStuff'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/dom-tool'
   , 'require/text!./newItem.tpl'
     ], function(
     angular
   , helpers
-  , domStuff
+  , domTool
   , template
 ) {
     "use strict";
@@ -91,7 +91,7 @@ define([
                 form = element[0].ownerDocument.createElement(tag);
                 form.setAttribute('index', ctrl.index);
                 form.textContent = 'to be a: <' + tag + '>';
-                domStuff.insert(placeholder, 'append', form);
+                domTool.insert(placeholder, 'append', form);
                 $compile(angular.element(form))(scope);
             }
 

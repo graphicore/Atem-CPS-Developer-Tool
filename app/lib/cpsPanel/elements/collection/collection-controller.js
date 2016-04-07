@@ -1,13 +1,16 @@
 define([
-    'metapolator/errors'
-  , 'metapolator/models/CPS/cpsTools'
+    'Atem-CPS/errors'
 ], function(
     errors
-  , cpsTools
 ) {
     "use strict";
-    function CollectionController($scope) {
+    /*global console:true, setTimeout:true*/
+
+    var assert = errors.assert;
+
+    function CollectionController($scope, cpsTools) {
         this.$scope = $scope;
+        this._cpsTools = cpsTools;
 
         $scope.controller = this;
         this.index = $scope.index;
@@ -29,7 +32,7 @@ define([
 
     }
 
-    CollectionController.$inject = ['$scope'];
+    CollectionController.$inject = ['$scope', 'cpsTools'];
     var _p = CollectionController.prototype;
 
     _p._setItems = function() {
@@ -93,7 +96,7 @@ define([
     // just changed this.cpsPropertyDict to this.cpsCollection
     // could be reduced to a helper in its core.
     _p.moveCPSElement = function(source, sourceIndex, targetIndex, insertPosition) {
-        errors.assert(
+        assert(
             this.acceptMoveCPSElement(source, sourceIndex, targetIndex)
           , 'move CPS-Element is rejected'
         );
@@ -116,7 +119,7 @@ define([
             // this.acceptMoveCPSElement
             _targetIndex -= 1;
 
-        cpsTools.moveCPSElement(source, sourceIndex
+        this._cpsTools.moveCPSElement(source, sourceIndex
                              , this.cpsCollection, _targetIndex);
     };
 

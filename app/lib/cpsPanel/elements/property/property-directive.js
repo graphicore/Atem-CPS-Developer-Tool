@@ -1,6 +1,6 @@
 define([
     'angular'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
   , 'require/text!./property.tpl'
     ], function(
     angular
@@ -11,6 +11,7 @@ define([
 
     function PropertyDirective() {
         function link(scope, element, attrs) {
+            //jshint unused:vars
             var startEditHandler = helpers.handlerDecorator(
                                         scope,scope.startEdit, true, true);
             element.on('click', function(event) {

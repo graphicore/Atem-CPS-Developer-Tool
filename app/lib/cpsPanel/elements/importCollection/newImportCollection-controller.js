@@ -1,7 +1,7 @@
 define([
-    'metapolator/errors'
+    'Atem-CPS/errors'
   , './importCollection-controller'
-  , 'metapolator/models/CPS/elements/AtImportCollection'
+  , 'Atem-CPS/CPS/elements/AtImportCollection'
 ], function(
     errors
   , Parent

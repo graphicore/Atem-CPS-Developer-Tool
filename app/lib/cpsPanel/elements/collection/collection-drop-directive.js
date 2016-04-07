@@ -13,6 +13,7 @@ define([
 
     function CollectionDropDirective(DropHelper) {
         function link(_scope, element, attrs) {
+            //jshint unused:vars
                 // should be possibly be done with some configuration.
             var scope = element.isolateScope()
               , controller = scope.controller

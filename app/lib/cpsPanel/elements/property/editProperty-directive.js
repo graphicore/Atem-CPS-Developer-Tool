@@ -1,6 +1,6 @@
 define([
     'angular'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
   , 'require/text!./editProperty.tpl'
     ], function(
     angular
@@ -11,6 +11,7 @@ define([
 
     function EditPropertyDirective() {
         function link(scope, element, attrs) {
+            //jshint unused: vars
             element.on('click', helpers.stopPropagation);
             element.on('dblclick', helpers.stopPropagation);
 

@@ -2,9 +2,9 @@ define([
     'angular'
   , './rule-controller'
   , './rule-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elements/propertyDict/propertyDict'
-  , 'metapolator/ui/redPill/cpsPanel/elements/selectorList/selectorList'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/elementToolbar'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/propertyDict/propertyDict'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/selectorList/selectorList'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/elementToolbar'
   , './newRule-controller'
   , './newRule-directive'
 ], function(

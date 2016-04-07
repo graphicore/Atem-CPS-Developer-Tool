@@ -1,9 +1,7 @@
 define([
-    'metapolator/models/CPS/cpsTools'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/clickHandler'
+   'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/clickHandler'
 ], function(
-    cpsTools
-  , clickHandler
+    clickHandler
 ) {
     "use strict";
     function RuleController($scope) {

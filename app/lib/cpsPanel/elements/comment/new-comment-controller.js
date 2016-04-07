@@ -1,6 +1,6 @@
 define([
-    'metapolator/ui/redPill/cpsPanel/elements/helpers'
-  , 'metapolator/models/CPS/elements/Comment'
+    'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
+  , 'Atem-CPS/CPS/elements/Comment'
 ], function(
     helpers
   , Comment

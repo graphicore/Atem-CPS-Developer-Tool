@@ -2,7 +2,7 @@ define([
     'angular'
   , './comment-controller'
   , './comment-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/elementToolbar'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/elementToolbar'
   , './new-comment-directive'
   , './new-comment-controller'
 ], function(

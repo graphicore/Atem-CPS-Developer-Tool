@@ -1,5 +1,5 @@
 define([
-    'metapolator/models/CPS/elements/AtNamespaceCollection'
+    'Atem-CPS/CPS/elements/AtNamespaceCollection'
 ], function(
     AtNamespaceCollection
 ) {

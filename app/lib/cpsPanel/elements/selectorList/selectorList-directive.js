@@ -1,7 +1,7 @@
 define([
     'angular'
   , 'require/text!./selectorList.tpl'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
     ], function(
     angular
   , template
@@ -35,7 +35,7 @@ define([
                 var display = element[0].getElementsByClassName('display');
                 angular.element(display).on('click', helpers.handlerDecorator(
                           scope, ctrl.startEdit.bind(ctrl), true, true));
-            }
+            };
         }
 
         return {

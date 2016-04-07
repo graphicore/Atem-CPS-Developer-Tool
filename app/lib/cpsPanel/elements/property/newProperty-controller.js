@@ -1,16 +1,14 @@
 define([
     './property-controller'
-  , 'metapolator/models/CPS/cpsTools'
 ], function(
     Parent
-  , cpsTools
 ) {
     "use strict";
-    function NewPropertyController($scope) {
-        Parent.call(this, $scope);
+    function NewPropertyController($scope, cpsTools) {
+        Parent.call(this, $scope, cpsTools);
     }
 
-    NewPropertyController.$inject = ['$scope'];
+    NewPropertyController.$inject = ['$scope', 'cpsTools'];
     var _p = NewPropertyController.prototype = Object.create(Parent.prototype);
     _p.constructor = NewPropertyController;
 
@@ -24,7 +22,7 @@ define([
           , value: ''
         };
         $scope.edit = true;
-    }
+    };
 
     // override _changeHandler of Parent
     _p._changeHandler = function () {
@@ -38,19 +36,18 @@ define([
             ? (property.message || 'no message :-(')
             : ''
             ;
-    }
+    };
 
     // override _finalize of Parent
     _p._finalize = function() {
         var $scope = this.$scope
-          , propertyModel = $scope.propertyModel
-          , property = property = this._getNewProperty()
+          , property = this._getNewProperty()
           ;
         // this will close this directive
         this.$scope.$emit('finalizeNewProperty');
         if(!property.invalid)
             cpsTools.appendProperty($scope.cpsPropertyDict, property);
-    }
+    };
 
     return NewPropertyController;
 });

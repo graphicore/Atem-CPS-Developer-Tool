@@ -2,8 +2,8 @@ define([
     'angular'
   , './styleDict-controller'
   , './styleDict-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elements/rule/rule'
-  , 'metapolator/ui/redPill/cpsPanel/dragAndDrop/dragAndDrop'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/rule/rule'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/dragAndDrop/dragAndDrop'
 ], function(
     angular
   , Controller

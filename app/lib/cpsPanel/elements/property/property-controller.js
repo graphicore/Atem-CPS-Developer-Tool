@@ -1,15 +1,15 @@
 define([
-    'metapolator/models/CPS/cpsTools'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/clickHandler'
+    'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/clickHandler'
 ], function(
-    cpsTools
-  , helpers
+    helpers
   , clickHandler
 ) {
     "use strict";
-    function PropertyController($scope) {
+    /*global setTimeout:true*/
+    function PropertyController($scope, cpsTools) {
         this.$scope = $scope;
+        this._cpsTools = cpsTools;
         // when name or value change do this:
         $scope.changeHandler = this._changeHandler.bind(this);
         $scope.startEdit = this._startEdit.bind(this);
@@ -27,7 +27,7 @@ define([
 
     }
 
-    PropertyController.$inject = ['$scope'];
+    PropertyController.$inject = ['$scope', 'cpsTools'];
     var _p = PropertyController.prototype;
     _p.constructor = PropertyController;
 
@@ -61,13 +61,13 @@ define([
         //          Error: [$rootScope:inprog] $apply already in progress
         //    cpsPropertyDict.on should probably better trigger async when
         //    used by ui code(?)
-        setTimeout(cpsTools.updateProperty, 0, $scope.cpsPropertyDict
+        setTimeout(this._cpsTools.updateProperty, 0, $scope.cpsPropertyDict
                                              , this.index, property);
     };
 
     _p._getNewProperty = function() {
         var $scope = this.$scope;
-        return cpsTools.makeProperty($scope.propertyModel.name
+        return this._cpsTools.makeProperty($scope.propertyModel.name
                                            , $scope.propertyModel.value);
     };
 

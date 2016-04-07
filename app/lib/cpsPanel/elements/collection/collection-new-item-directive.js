@@ -1,19 +1,18 @@
 define([
     'angular'
   , './specificTargetTools'
-  , 'metapolator/ui/redPill/cpsPanel/dragAndDrop/genericTargetTools'
-  , 'metapolator/ui/domStuff'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/dragAndDrop/genericTargetTools'
+  , 'Atem-CPS-Developer-Tool/dom-tool'
     ], function(
     angular
   , specificTargetTools
   , genericTargetTools
-  , domStuff
+  , domTool
 ) {
     "use strict";
 
     var findElement = specificTargetTools.findElement
       , getPositionReference = specificTargetTools.getPositionReference
-      , getTargetIndex = genericTargetTools.getTargetIndex
       , getTargetData = genericTargetTools.getTargetData
       ;
 
@@ -62,13 +61,14 @@ define([
         // add attribute "index", index
         uiElement.setAttribute('index', index);
 
-        domStuff.insert(placementReference, target.insertPosition, uiElement);
+        domTool.insert(placementReference, target.insertPosition, uiElement);
         $compile(angular.element(uiElement))(scope);
     }
 
 
     function CollectionNewItemDirective($compile) {
         function link(_scope, element, attrs) {
+          //jshint unused:vars
             var scope = element.isolateScope()
               , controller = scope.controller
               , container = element[0] // needed?

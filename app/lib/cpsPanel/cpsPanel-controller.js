@@ -1,10 +1,10 @@
 define([
-    'metapolator/errors'
+    'Atem-CPS/errors'
 ], function(
     errors
 ) {
     "use strict";
-
+    /*global setTimeout:true*/
     var CPSError = errors.CPS;
 
     function CpsPanelController($scope, modelController, ruleController) {

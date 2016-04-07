@@ -2,10 +2,10 @@ define([
     'angular'
   , './propertyDict-controller'
   , './propertyDict-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elements/property/property'
-  , 'metapolator/ui/redPill/cpsPanel/elements/comment/comment'
-  , 'metapolator/ui/redPill/cpsPanel/elements/generic/generic'
-  , 'metapolator/ui/redPill/cpsPanel/dragAndDrop/dragAndDrop'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/property/property'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/comment/comment'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/generic/generic'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/dragAndDrop/dragAndDrop'
 ], function(
     angular
   , Controller

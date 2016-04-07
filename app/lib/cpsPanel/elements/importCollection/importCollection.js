@@ -2,7 +2,7 @@ define([
     'angular'
   , './importCollection-controller'
   , './importCollection-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/elementToolbar'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/elementToolbar'
   , './newImportCollection-controller'
   , './newImportCollection-directive'
 

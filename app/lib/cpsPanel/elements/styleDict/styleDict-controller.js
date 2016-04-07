@@ -1,9 +1,5 @@
 define([
-    'metapolator/errors'
-  , 'metapolator/models/CPS/cpsTools'
 ], function(
-    errors
-  , cpsTools
 ) {
     "use strict";
     function StyleDictController($scope) {
@@ -56,6 +52,7 @@ define([
     };
 
     _p._styleDictChangeHandler = function(userData, event, eventData) {
+        //jshint unused: vars
         if(event === 'change') {
             this._resetItems();
             // re-render the children

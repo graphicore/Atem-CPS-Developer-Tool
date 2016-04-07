@@ -1,6 +1,6 @@
 define([
-    'metapolator/models/CPS/elements/Rule'
-  , 'metapolator/models/CPS/elements/ParameterDict'
+    'Atem-CPS/CPS/elements/Rule'
+  , 'Atem-CPS/CPS/elements/ParameterDict'
 ], function(
     Rule
   , PropertyDict

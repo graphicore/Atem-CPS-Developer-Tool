@@ -1,18 +1,18 @@
 define([
     'errors'
-  , 'metapolator/models/CPS/cpsTools'
 ], function(
     errors
-  , cpsTools
 ) {
     "use strict";
+    /* global setTimeout:true, console:true*/
 
     var KeyError = errors.Key
       , assert = errors.assert
       ;
 
-    function PropertyDictController($scope) {
+    function PropertyDictController($scope, cpsTools) {
         this.$scope = $scope;
+        this._cpsTools = cpsTools;
 
         this._setItems();
 
@@ -31,7 +31,7 @@ define([
         this._activeNamesRegistry = null;
     }
 
-    PropertyDictController.$inject = ['$scope'];
+    PropertyDictController.$inject = ['$scope', 'cpsTools'];
     var _p = PropertyDictController.prototype;
 
     _p._setItems = function() {
@@ -87,7 +87,7 @@ define([
             _targetIndex -= 1;
 
 
-        cpsTools.moveCPSElement(source, sourceIndex
+        this._cpsTools.moveCPSElement(source, sourceIndex
                              , this.cpsPropertyDict, _targetIndex);
     };
 
@@ -196,7 +196,7 @@ define([
         items = this.cpsPropertyDict.items;
         // last item in the dict is active, so register back to front
         for(i=items.length-1;i>=0;i--) {
-            if(!cpsTools.isProperty(items[i]))
+            if(!this._cpsTools.isProperty(items[i]))
                 continue;
             this._registerName(i, items[i].name);
         }

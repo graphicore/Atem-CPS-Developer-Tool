@@ -1,15 +1,14 @@
 define([
-    'metapolator/errors'
-  , 'metapolator/models/CPS/cpsTools'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
-  , 'metapolator/models/CPS/parsing/parseSelectorList'
+    'Atem-CPS/errors'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
+  , 'Atem-CPS/CPS/parsing/parseSelectorList'
 ], function(
     errors
-  , cpsTools
   , helpers
   , parseSelectorList
 ) {
     "use strict";
+    /*global setTimeout:true, console:true*/
 
     var CPSParserError = errors.CPSParser;
 

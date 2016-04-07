@@ -1,7 +1,7 @@
 define([
     'angular'
   , 'require/text!./comment.tpl'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
   , './comment-directive'
     ], function(
     angular
@@ -20,9 +20,9 @@ define([
             scope.getFormatClass = getFormatClass;
 
             scope.hasFocus = function() {
-                var input = element[0].getElementsByClassName('input')[0]
+                var input = element[0].getElementsByClassName('input')[0];
                 return helpers.hasFocus(input);
-            }
+            };
 
             scope.initEdit = function() {
                 var input = element[0].getElementsByClassName('input')[0]

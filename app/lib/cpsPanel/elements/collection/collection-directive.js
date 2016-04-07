@@ -8,8 +8,9 @@ define([
     "use strict";
 
 
-    function CollectionDirective($compile, dragDataService, dragIndicatorService) {
+    function CollectionDirective($compile) {
         function link(scope, element, attrs, controller) {
+            //jshint unused:vars
             element.append(template);
             $compile(element.contents())(scope);
         }

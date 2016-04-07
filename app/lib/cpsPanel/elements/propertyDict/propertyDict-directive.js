@@ -1,8 +1,8 @@
 define([
     'angular'
-  , 'errors'
+  , 'Atem-CPS/errors'
   , 'require/text!./propertyDict.tpl'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
     ], function(
     angular
   , errors
@@ -96,8 +96,6 @@ define([
                   , items
                   , i,l
                   , ii, ll
-                  , property
-                  , properties
                   , tag = 'mtk-cps-property'.toUpperCase()
                   ;
                 // This seems a bit clumsy, but it tries to be only medium
@@ -133,7 +131,6 @@ define([
                   , name = item.name
                   , index = scope.index
                   , classes = ['active', 'shadowed']
-                  , active
                   ;
                 if(!controller.isActive(index, name))
                     classes.reverse();

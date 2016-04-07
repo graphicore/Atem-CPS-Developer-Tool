@@ -1,19 +1,9 @@
 define([
-    'metapolator/errors'
-  , './selectorList-controller'
-  , 'metapolator/models/CPS/cpsTools'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
-  , 'metapolator/models/CPS/parsing/parseSelectorList'
+    './selectorList-controller'
 ], function(
-    errors
-  , Parent
-  , cpsTools
-  , helpers
-  , parseSelectorList
+    Parent
 ) {
     "use strict";
-
-    var CPSParserError = errors.CPSParser;
 
     function NewSelectorListController($scope) {
         this.$scope = $scope;

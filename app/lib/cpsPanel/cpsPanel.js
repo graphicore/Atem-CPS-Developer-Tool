@@ -4,7 +4,7 @@ define([
   , './cpsPanel-directive'
   , './elements/collection/collection'
   , './elements/styleDict/styleDict'
-  , 'metapolator/ui/redPill/cpsPanel/dragAndDrop/dragAndDrop'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/dragAndDrop/dragAndDrop'
 ], function(
     angular
   , Controller

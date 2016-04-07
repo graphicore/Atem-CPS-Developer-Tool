@@ -1,6 +1,6 @@
 define([
     'require/text!./namespaceCollection.tpl'
-  , 'require/text!metapolator/ui/redPill/cpsPanel/elements/collection/collection.tpl'
+  , 'require/text!Atem-CPS-Developer-Tool/cpsPanel/elements/collection/collection.tpl'
     ], function(
     template
   , collectionTPL
@@ -15,6 +15,7 @@ define([
 
     function NamespaceCollectionDirective($compile) {
         function link(scope, element, attrs) {
+            //jshint unused:vars
             element.append(_template);
             $compile(element.contents())(scope);
         }

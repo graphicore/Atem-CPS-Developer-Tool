@@ -1,6 +1,6 @@
 define([
     'angular'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
   , 'require/text!./rule.tpl'
     ], function(
     angular
@@ -11,6 +11,7 @@ define([
 
     function RuleDirective() {
         function link(scope, element, attrs, controller) {
+            //jshint unused:vars
             scope.updateUsedNames = function(usedNamesSet) {
                 var i,l,children = element[0].children, child, scope;
                 for(i=0,l=children.length;i<l;i++) {

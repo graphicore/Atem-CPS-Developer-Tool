@@ -2,6 +2,7 @@ define([
 ], function(
 ) {
     "use strict";
+    /*global setTimeout:true, clearTimeout:true*/
 
     /**
      * This is made for use in directives
@@ -63,14 +64,13 @@ define([
     function calculateTextBoxSize(value) {
         var lines = value.split('\n')
           , cols = 0, i, l
-          , $scope = this.$scope
           ;
         for(i=0,l=lines.length;i<l;i++)
             if(lines[i].length > cols)
                 cols = lines[i].length;
 
         return [cols, lines.length];
-    };
+    }
 
     function hasFocus(element) {
         var document = element.ownerDocument;

@@ -1,8 +1,8 @@
 define([
     'angular'
   , 'require/text!./comment.tpl'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
-  , 'bower_components/marked/lib/marked'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
+  , 'marked'
     ], function(
     angular
   , template

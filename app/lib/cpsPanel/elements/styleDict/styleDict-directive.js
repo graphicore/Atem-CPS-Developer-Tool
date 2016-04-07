@@ -9,6 +9,7 @@ define([
 
     function styleDictDirective() {
         function link(scope, element, attrs, controller) {
+            //jshint unused: vars
             scope.formatTrace = function(trace) {
                 var i, item, result = [], depth = '';
                 for(i=trace.length-1;i>=0;i--) {

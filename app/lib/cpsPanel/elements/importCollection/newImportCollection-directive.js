@@ -1,7 +1,7 @@
 define([
     'angular'
   , 'require/text!./importCollection.tpl'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
     ], function(
     angular
   , template

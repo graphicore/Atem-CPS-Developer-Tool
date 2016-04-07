@@ -4,9 +4,10 @@ define([
     template
 ) {
     "use strict";
+    /*global document:true*/
     function CpsPanelDirective() {
         function link(scope, element, attrs, controller) {
-
+            //jshint unused: vars
             function setHeight() {
                 /*jshint validthis: true*/
                 this.setter = null;

@@ -1,7 +1,7 @@
 define([
-    'metapolator/ui/redPill/cpsPanel/elementToolbar/clickHandler'
-  , 'metapolator/ui/redPill/cpsPanel/elements/helpers'
-  , 'metapolator/models/CPS/elements/Comment'
+    'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/clickHandler'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
+  , 'Atem-CPS/CPS/elements/Comment'
 ], function(
     clickHandler
   , helpers

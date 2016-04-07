@@ -2,10 +2,10 @@ define([
     'angular'
   , './newItem-controller'
   , './newItem-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elements/comment/comment'
-  , 'metapolator/ui/redPill/cpsPanel/elements/importCollection/importCollection'
-  , 'metapolator/ui/redPill/cpsPanel/elements/namespaceCollection/namespaceCollection'
-  , 'metapolator/ui/redPill/cpsPanel/elements/rule/rule'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/comment/comment'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/importCollection/importCollection'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/namespaceCollection/namespaceCollection'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elements/rule/rule'
 ], function(
     angular
   , Controller

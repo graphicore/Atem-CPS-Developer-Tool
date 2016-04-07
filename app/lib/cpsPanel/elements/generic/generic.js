@@ -2,7 +2,7 @@ define([
     'angular'
   , './generic-controller'
   , './generic-directive'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/elementToolbar'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/elementToolbar'
 ], function(
     angular
   , Controller

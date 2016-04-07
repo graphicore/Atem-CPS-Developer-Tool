@@ -1,11 +1,12 @@
 define([
-    'metapolator/ui/redPill/cpsPanel/elements/collection/collection-controller'
-  , 'metapolator/ui/redPill/cpsPanel/elementToolbar/clickHandler'
+    'Atem-CPS-Developer-Tool/cpsPanel/elements/collection/collection-controller'
+  , 'Atem-CPS-Developer-Tool/cpsPanel/elementToolbar/clickHandler'
 ], function(
     Parent
   , clickHandler
 ) {
     "use strict";
+
     function NamespaceCollectionController() {
         Parent.apply(this, arguments);
         this.clickToolHandler = clickHandler.bind(this, 'command');
