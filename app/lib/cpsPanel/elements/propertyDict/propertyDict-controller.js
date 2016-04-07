@@ -1,5 +1,5 @@
 define([
-    'errors'
+    'Atem-CPS/errors'
 ], function(
     errors
 ) {
