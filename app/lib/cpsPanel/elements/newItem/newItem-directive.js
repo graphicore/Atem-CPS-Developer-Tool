@@ -1,7 +1,7 @@
 define([
     'angular'
   , 'Atem-CPS-Developer-Tool/cpsPanel/elements/helpers'
-  , 'Atem-CPS-Developer-Tool/dom-tool'
+  , 'Atem-CPS-Toolkit/dom-tool'
   , 'require/text!./newItem.tpl'
     ], function(
     angular

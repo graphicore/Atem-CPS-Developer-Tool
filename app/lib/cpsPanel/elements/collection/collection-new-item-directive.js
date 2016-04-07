@@ -2,7 +2,7 @@ define([
     'angular'
   , './specificTargetTools'
   , 'Atem-CPS-Developer-Tool/cpsPanel/dragAndDrop/genericTargetTools'
-  , 'Atem-CPS-Developer-Tool/dom-tool'
+  , 'Atem-CPS-Toolkit/dom-tool'
     ], function(
     angular
   , specificTargetTools
