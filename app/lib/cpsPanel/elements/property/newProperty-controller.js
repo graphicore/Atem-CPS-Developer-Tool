@@ -46,7 +46,7 @@ define([
         // this will close this directive
         this.$scope.$emit('finalizeNewProperty');
         if(!property.invalid)
-            cpsTools.appendProperty($scope.cpsPropertyDict, property);
+            this._cpsTools.appendProperty($scope.cpsPropertyDict, property);
     };
 
     return NewPropertyController;
