@@ -122,12 +122,12 @@ define([
     };
 
     _p._initCollectionView = function() {
-        if(!this.$scope.cpsFile) {
-            // 0 is often 'base.cps' which is kind of a bad default choice
+        if(!this.$scope.cpsFile && this.$scope.cpsFileOptions[0]) {
+            // 0 may be a bad default choice, as much as any other pick
             // because it is very big.
             // TODO: find a better way to select a default, maybe use
             // the cps file of the first master
-            this.$scope.cpsFile = this.$scope.cpsFileOptions[1];
+            this.$scope.cpsFile = this.$scope.cpsFileOptions[0];
         }
         this.changeCPSFile();
     };
@@ -135,6 +135,7 @@ define([
     _p.changeCPSFile = function() {
         if(this._waiting) return;
         var file = this.$scope.cpsFile;
+        if(!file) return;
         this.$scope.collection = null;
         this._waiting = this._ruleController.getRule(true, file)
             .then(this._receiveCollection.bind(this))
