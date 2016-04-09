@@ -1,7 +1,7 @@
-<span ng-if="!edit"
+<div ng-if="!edit"
       class="display {{getFormatClass(ctrl.comment.value)}}"
       ng-init="initDisplay()"
-></span><!--
+></div><!--
 --><mtk-element-toolbar
         ng-if="!edit"
         mtk-tools="ctrl.mtkElementTools"
