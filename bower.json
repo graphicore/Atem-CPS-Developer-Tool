@@ -19,10 +19,10 @@
     "tests"
   ],
   "dependencies": {
-    "Atem-CPS": "git@github.com:graphicore/Atem-CPS.git",
+    "Atem-CPS": "https://github.com/graphicore/Atem-CPS.git",
     "requirejs-text": ">=2.0.14",
     "marked": ">=0.3.5",
     "angular": ">=1.5.3",
-    "Atem-CPS-Toolkit": "git@github.com:graphicore/Atem-CPS-Toolkit"
+    "Atem-CPS-Toolkit": "https://github.com/graphicore/Atem-CPS-Toolkit"
   }
 }
